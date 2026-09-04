@@ -2,13 +2,14 @@
 import 'swiper/css'
 import { BackgroundRadialRight } from '../BackgroundRadialRight'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import type { SwiperRef } from 'swiper/react'
 import { dataPaymentMethods } from './PaymentMethods.data'
 import Image from 'next/image'
 import { CtaDark } from '../CtaDark'
 import { useRef } from 'react'
 
 export function PaymentsMethods() {
-    const swiperRef = useRef(null);
+    const swiperRef = useRef<SwiperRef>(null);
 
     const handleReachEnd = () => {
         if (swiperRef.current) {

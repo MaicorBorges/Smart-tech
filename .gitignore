@@ -33,3 +33,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Static export and local environment
+out/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo

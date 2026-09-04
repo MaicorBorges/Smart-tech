@@ -1,5 +1,4 @@
 "use client"
-import knxImage from './assets/knx.png';
 import Link from "next/link"
 import { BackgroundRadialLeft } from "../BackgroundRadialLeft"
 import { Reveal } from "../Reveal"

@@ -1,12 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
-
-const popinsFont = Poppins({ weight: ['400', '600', '700'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Smart Tech | Ingenieria',
-  description: 'Soluciones en domótica, inmótica, control industrial e IoT',
+  title: { default: 'Smart-tech — Ingeniería e integración', template: '%s | Smart-tech' },
+  description: 'Ingeniería, automatización y control para residencias, edificios e industria. Conocé los servicios y las obras de Smart-tech en Uruguay.',
+  robots: { index: false, follow: false },
 }
 
 export default function RootLayout({
@@ -15,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es">
-      <body className={popinsFont.className}>{children}</body>
+    <html lang="es-UY">
+      <body>{children}</body>
     </html>
   )
 }
